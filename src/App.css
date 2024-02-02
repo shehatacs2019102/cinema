@@ -1,0 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+
+:root{
+
+    --primary: #e60f0f; 
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+
+}
+body::-webkit-scrollbar{
+    display: none;
+}
