@@ -37,21 +37,26 @@ function Banner(props) {
                             </p>
                             <div className="button">Button</div>
 
-                        <div className="col-lg-6 col-md-12">
+                        
+                        </div>
+                    </div>
+
+
+                    <div className="col-lg-6 col-md-12">
                         <div className="date active">
                             <h2>On 15th August</h2>  
                         </div>
-                        <div className="trailer">
+                        <div className="trailer d-flex align-items-center justify-content-center active">
                             <a href="#" className="playBtn">
                             <ion-icon name="play-outline"></ion-icon>
                             </a>
                             <p>Watch Trailer</p>
                         </div>
                     </div>
-                        </div>
-                    </div>
                     
                 </div>
+
+                
             </div>
 
         </div>

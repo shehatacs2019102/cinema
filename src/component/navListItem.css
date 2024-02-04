@@ -18,5 +18,5 @@
 .nav li a:hover,
 .nav li a.active{
 
-    color: var(--primary);
+    color: red;
 }
