@@ -1,6 +1,6 @@
-.banner .playBtn {
+ .playBtn {
     position: relative;
-    color: white;
+    color: white !important;
     width: 80px;
     height: 80px;
     transform: 1s;
@@ -14,13 +14,13 @@
     cursor: pointer !important;
 }
 
-.banner .playBtn ion-icon{
+ .playBtn ion-icon{
     font-size: 4rem;
-    color: var(--primary);
+    color: white;
     cursor: pointer;
 }
 
-.banner .playBtn::before{
+ .playBtn::before{
     position: absolute;
     top: -5px;
     left: -5px;
@@ -42,4 +42,7 @@
         opacity: 1;
         filter: blur(10px);
     }
+}
+p{
+    color: white !important;
 }

@@ -54,3 +54,6 @@
     color: white;
     margin: 20px 0 30px;
 }
+.button{
+    display: flex;
+}

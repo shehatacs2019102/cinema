@@ -4,8 +4,8 @@
     align-items: center;
     gap: 10px;
     margin-right: 15px;
-    background: red;
-    color: rgb(255, 255, 255);
+    background: #ff3700;
+    color: white;
     padding: 5px 16px;
     text-decoration: none;
     font-size: 1.1rem;
@@ -13,11 +13,12 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     transition: 0.3s;
-    cursor: pointer !important;
+    cursor:pointer !important;
     border: none;
+    z-index: 20000;
 }
 .mainBtn:hover{
-    color: red ;
-    background: #ffffff ;
-    cursor: pointer ;
+    color: #ff3700 !important;
+    background: #ffffff !important;
+    cursor: pointer  !important;
 }

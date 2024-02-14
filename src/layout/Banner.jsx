@@ -5,6 +5,7 @@ import { MovieContent } from '../component/MovieContent';
 import { MovieDate } from '../component/MovieDate';
 import { PlayBtn } from '../component/PlayBtn';
 import { Button } from '../component/Button';
+import { MovieSwiper } from '../component/MovieSwiper';
 function Banner(props) {
     const [movies,setMovies]= useState([]);
     const fetchData = ()=>{
@@ -15,32 +16,53 @@ function Banner(props) {
     useEffect( ()=>{
         fetchData();
     },[])
-    
+    const handleSlideCHange = id => {
+        const NewMovies = movies.map(movie =>{
+            movie.active = false ;
+            if(movie._id === id){
+                movie.active = true;
+
+            }
+            return movie;
+        });
+        setMovies(NewMovies);
+    }
     return (
         <div className="banner">
-            <div className="movie"></div>
-            <img src={bgImg} alt="Background Image" className="bgImg active" />
+            {
+                movies && movies.length>0 && movies.map(movie => (
+
+                    <div className="movie">
+            <img src={movie.bgImg} alt="Background Image" className={`bgImg ${movie.active ? 'active' : undefined}`} />            
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-lg-6 col-md-12">
 
-                        <MovieContent/>
+                        <MovieContent movie = {movie}/>
                         
                     </div>
 
 
                     <div className="col-lg-6 col-md-12">
                         
-                        <MovieDate/>
+                        <MovieDate movie = {movie} />
 
-                        <PlayBtn/>
-                        <Button icon = {<ion-icon name="bookmark-outline"></ion-icon>} name = 'book' Color = '#000000' bgColor ='#575600' />
+                        <PlayBtn movie = {movie} />
+                        
                     </div>
                     
                 </div>
 
                 
             </div>
+            </div>
+                ))
+            }
+            
+            
+            
+            {movies && movies.length > 0 && <MovieSwiper slides = {movies} slideChange = {handleSlideCHange}/> }
+            
 
         </div>
     );

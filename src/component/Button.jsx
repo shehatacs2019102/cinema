@@ -1,17 +1,19 @@
 import React from 'react';
 import './button.css';
-export function Button({icon, name, bgColor = '#ff3700', Color='#ffffff'}) {
+export function Button({name, icon, color , bgColor}) {
     
 
     return (
-        <>
-            <a href="#" className='mainBtn' style={{color:Color, background:bgColor}}>
+        <div>
+        <a href="#" className='mainBtn' style ={{color :color, background:bgColor}}>
 
-                {icon} {name}
-               
-            </a>
-        </>
-    );
+       {icon} {name}
+      
+        </a>
+   </div>
+            
+        
+    ); 
 }
 
 
