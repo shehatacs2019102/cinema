@@ -1,0 +1,24 @@
+.mainBtn{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 15px;
+    background: #ff3700;
+    color: white;
+    padding: 5px 16px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    cursor:pointer !important;
+    border: none;
+    z-index: 20000;
+}
+.mainBtn:hover{
+    color: #ff3700 !important;
+    background: #ffffff !important;
+    cursor: pointer  !important;
+}
