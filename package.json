@@ -2,8 +2,11 @@
   "name": "front",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://shehatacs2019102.github.io/cinema",
   "type": "module",
   "scripts": {
+    "gh-pages-build": "vite build --base=/cinema/",
+    "gh-pages-deploy": "gh-pages -d dist",
     "dev": "vite",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
