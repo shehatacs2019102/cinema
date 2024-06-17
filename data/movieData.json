@@ -1,8 +1,8 @@
 [
   {
     "_id": 1,
-    "titleImg": "../assets/movies/transformer-title.png",
-    "bgImg": "../assets/movies/bg-transformer.jpg",
+    "titleImg": "./assets/movies/transformer-title.png",
+    "bgImg": "./assets/movies/bg-transformer.jpg",
     "previewImg": "../assets/movies/transformer.jpg",
     "video": "https://www.youtube.com/embed/TxPNrwbuxN0",
     "title": "Transformer",
@@ -17,9 +17,9 @@
   },
   {
     "_id": 2,
-    "titleImg": "../assets/movies/meg-2-title.png",
-    "bgImg": "../assets/movies/bg-meg-2.jpeg",
-    "previewImg": "../assets/movies/meg-2.jpg",
+    "titleImg": "./assets/movies/meg-2-title.png",
+    "bgImg": "./assets/movies/bg-meg-2.jpeg",
+    "previewImg": "./assets/movies/meg-2.jpg",
     "video": "https://www.youtube.com/embed/dG91B3hHyY4",
     "title": "Meg 2",
     "year": "2023",
@@ -33,9 +33,9 @@
   },
   {
     "_id": 3,
-    "titleImg": "../assets/movies/fast-x-title.png",
-    "bgImg": "../assets/movies/bg-fast-x.jpeg",
-    "previewImg": "../assets/movies/fast-x.jpeg",
+    "titleImg": "./assets/movies/fast-x-title.png",
+    "bgImg": "./assets/movies/bg-fast-x.jpeg",
+    "previewImg": "./assets/movies/fast-x.jpeg",
     "video": "https://www.youtube.com/embed/32RAq6JzY-w",
     "title": "Fast X",
     "year": "2023",
