@@ -10,7 +10,7 @@ export function Card({movie}) {
                 <div className="movie-card">
 
                             <img src={movie.previewImg} alt="Preview Image"  className='img-fluid'/>
-                            <p>{movie.length} | {movie.category} </p>
+                            <p>{movie.length}  | {movie.category} AA</p>
 
                             <div className="content">
 

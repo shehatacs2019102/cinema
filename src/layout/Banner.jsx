@@ -9,7 +9,7 @@ import { MovieSwiper } from '../component/MovieSwiper';
 function Banner(props) {
     const [movies,setMovies]= useState([]);
     const fetchData = ()=>{
-        fetch('http://localhost:5173/data/movieData.json')
+        fetch('https://shehatacs2019102.github.io/cinema/data/movieData.json')
         .then(res=>res.json())
         .then(data => setMovies(data)).catch(e => console.log(e.message));
     }

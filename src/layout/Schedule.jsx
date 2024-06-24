@@ -5,7 +5,7 @@ export function Schedule(props) {
     const [data,setData] = useState([])
     const [movies,setMovies] = useState([])
     const fetchData = ()=>{
-        fetch('http://localhost:5173/data/movieData.json')
+        fetch('https://shehatacs2019102.github.io/cinema/data/movieData.json')
         .then(res=>res.json())
         .then(data => setData(data)).catch(e => console.log(e.message));
     }
