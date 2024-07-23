@@ -11,7 +11,7 @@ import Search from './component/Search'
 import Banner from './layout/Banner'
 import { Main } from './layout/Main';
 
-
+// shehab first commit
 
 function App() {
   const [count, setCount] = useState(0)
